@@ -1,0 +1,53 @@
+TO DO 06.01.26
+- IN MAIN:
+double values_network[15][15] // Array für die Werte von Johannes ioStream; daraus wird auch die Graphik hergeleitet
+int index // wie oft hat user neuen Widerstandswert eingegeben?
+
+Bedienungsablauf :
+Programm startet
+(1) Program start
+(2) Help
+(3) Quit
+
+(1) Program start
+Betriebsspannung des Netzwerkes? (0, falls keine gewünscht)
+
+1. Widerstandswert eingeben:
+user_input() Funktion aufrufen // Eingabe des Werts
+value [15] [15] // gespeichert in diesem array, Stelle: 0.0
+
+Parallel (P) oder in Reihe (R)? Eingabe beenden (X)? 
+P / R / X
+
+-> Parallel: 
+user_input() Funktion aufrufen // Eingabe des Werts
+value [15] [15] // gespeichert in diesem array, Stelle: 0.1
+
+Parallel oder in Reihe ? 
+P / R / X
+
+-> Reihe: 
+user_input() Funktion aufrufen // Eingabe des Werts
+value [15] [15] // gespeichert in diesem array, Stelle: 1.0
+
+-> 'X':
+Netzwerk Ausgabe (graphisch)
+(WAIT)
+
+Menü:
+(1) Gesamtwiderstand (value)
+(2) Gesamtstrom (falls Spannung) (value)
+// eventuell (3) Teilspannungen + Teilströme
+
+
+PAUL:
+- Menü erweitern + Submenü
+- Ausgabe graphisch (4 parallel max)
+
+Übergabe für J: Index, Betriebsspannung
+
+
+JOHANNES
+- Wert sortiert in Array abspeichern
+- Berechnungen + return
+- 
